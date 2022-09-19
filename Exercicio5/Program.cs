@@ -6,8 +6,8 @@ namespace Exercicio5
     {
         static void Main(string[] args)
         {
-            var banco = new BankAccount();
-            banco.Deposito(100);
+            
+            
         }
     }
 }

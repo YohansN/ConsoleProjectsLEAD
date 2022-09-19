@@ -24,17 +24,13 @@ namespace Exercicio4
             }
             else if(delta > 0)
             {
-                Console.WriteLine($"X1: {Math.Truncate(x1)}");
-                Console.WriteLine($"X2: {Math.Truncate(x2)}");
+                Console.WriteLine($"X1: {x1}");
+                Console.WriteLine($"X2: {x2}");
             }
             else
             {
                 Console.WriteLine("Não possui raiz");
             }
-
-            //Delta = b^2 - 4.a.c
-            //-b +- VDelta / 2.a
-
         }
     }
 }

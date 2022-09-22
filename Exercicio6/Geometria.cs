@@ -13,11 +13,6 @@ namespace Exercicio6
         {
             return 0;
         }
-               
-        public Geometria(float altura, float largura)
-        {
-            this.Altura = altura;
-            this.Largura = largura;
-        }
+
     }
 }

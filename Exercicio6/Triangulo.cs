@@ -8,7 +8,7 @@ namespace Exercicio6
     {
         public override float Area()
         {
-            return (Largura * Largura) / 2;
+            return (Largura * Altura) / 2;
         }
 
         public Triangulo(float altura, float largura)

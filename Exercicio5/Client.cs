@@ -10,10 +10,14 @@ namespace Exercicio5
         public string Ocupacao { get; set; }
         public string DataNascimento { get; set; } 
         public string Email { get; set; }
+        public BankAccount ContaBancaria { get; set; }
 
         public void Info()
         {
-            Console.WriteLine($"Nome: {Nome}\nOcupação: {Ocupacao}\nData de nascimento: {DataNascimento}\nEmail: {Email}");
+            if (ContaBancaria == null)
+                Console.WriteLine($"Nome: {Nome}\nOcupação: {Ocupacao}\nData de nascimento: {DataNascimento}\nEmail: {Email}");
+            else
+                Console.WriteLine($"Nome: {Nome}\nOcupação: {Ocupacao}\nData de nascimento: {DataNascimento}\nEmail: {Email}\nCodigo: {ContaBancaria.Codigo}\nSaldo: {ContaBancaria.Saldo}");
         }
 
         public void Age()
@@ -35,6 +39,14 @@ namespace Exercicio5
             Ocupacao = ocupacao;
             DataNascimento = dataNascimento;
             Email = email;
+        }
+        public Client(string nome, string ocupacao, string dataNascimento, string email, BankAccount contaBancaria)
+        {
+            Nome = nome;
+            Ocupacao = ocupacao;
+            DataNascimento = dataNascimento;
+            Email = email;
+            ContaBancaria = contaBancaria;
         }
     }
 }
